@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item android:title="Inicio"
+            android:id="@+id/start" />
+        <item android:title="Calculadoras"
+            android:id="@+id/calculators"/>
+        <item android:title="Codigo de colores de resistencias"
+            android:id="@+id/resistorColorCode"/>
+        <item android:title="Funciones lógicas"
+            android:id="@+id/logicFunctions"/>
+        <item android:title="Mapas Karnaugh"
+            android:id="@+id/karnaugh"/>
+        <item android:title="DataSheets"
+            android:id="@+id/datasheets"/>
+    </group>
+
+
+</menu>

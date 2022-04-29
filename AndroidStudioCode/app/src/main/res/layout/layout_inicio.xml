@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electrónica digital"
+        android:textSize="30sp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En esta aplicación usted podrá recrear diferentes situaciones de los contenidos de electrónica digital para poder visualizar y entender mejor los conceptos."
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Herramientas:"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/buttonCalculators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadoras"
+        />
+    <Button
+        android:id="@+id/buttonColorCodeResistors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código de colores de resistencias"
+        />
+    <Button
+        android:id="@+id/buttonLogicFunctions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funciones lógicas"
+        />
+    <Button
+        android:id="@+id/buttonKarnaugh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapas Karnaugh"
+        />
+    <Button
+        android:id="@+id/buttonDatasheets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datasheets"
+        />
+
+</LinearLayout>
