@@ -21,6 +21,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layouts/layouts_1_calculators',
+                    'src/main/res/layouts/layouts_2_color_code_resistor',
+                    'src/main/res/layouts/layouts_3_logic_gates',
+                    'src/main/res/layouts/layouts_4_karnaugh',
+                    'src/main/res/layouts/layouts_5_datasheets',
+                    'src/main/res/layouts/layouts_main',
+                    'src/main/res/layouts',
+                    'src/main/res'
+            ]
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
