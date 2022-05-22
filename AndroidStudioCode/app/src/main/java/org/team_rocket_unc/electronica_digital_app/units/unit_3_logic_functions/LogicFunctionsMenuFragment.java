@@ -41,7 +41,9 @@ public class LogicFunctionsMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, targetToolFragment).commit();
+                        .replace(R.id.fragment_container, targetToolFragment)
+                        .addToBackStack(null)
+                        .commit();
             }
         });
     }

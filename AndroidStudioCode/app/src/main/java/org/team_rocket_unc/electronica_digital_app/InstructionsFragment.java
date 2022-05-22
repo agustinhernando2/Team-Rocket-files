@@ -42,7 +42,10 @@ public class InstructionsFragment extends Fragment {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, tool).commit();
+                getFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, tool)
+                        .addToBackStack(null)
+                        .commit();
             }
         });
 

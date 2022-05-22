@@ -25,9 +25,11 @@ import org.team_rocket_unc.electronica_digital_app.units.unit_5_datasheets.Datas
 public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final Map<Integer, Fragment> FRAGMENT_GETTER;
+    private static final Map<Integer, Fragment> PREVIOUS_FRAGMENT_GETTER;
+    private DrawerLayout drawer;
 
     static {
-        FRAGMENT_GETTER = new HashMap() {{
+        FRAGMENT_GETTER = new HashMap<Integer, Fragment>() {{
             put(R.id.start, new MainFragment());
             put(R.id.calculators, new CalculatorMenuFragment());
             put(R.id.resistorColorCode, new InstructionsFragment("Código de colores de resistencias",
@@ -43,24 +45,26 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                     "En esta sección usted encontrará acceso a las DataSheet de los chips más utilizados en la materia Electrónica digital 1",
                     new DatasheetsToolFragment()));
         }};
-    }
 
-    private DrawerLayout drawer;
-    private Toolbar toolbar;
+        PREVIOUS_FRAGMENT_GETTER = new HashMap<Integer, Fragment>() {{
+            put(R.id.calculators, new MainFragment());
+
+        }};
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_main);
 
-        this.toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         this.drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView =  findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer, toolbar,
                 R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
@@ -72,7 +76,9 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container, FRAGMENT_GETTER.get(item.getItemId())).commit();
+                .replace(R.id.fragment_container, FRAGMENT_GETTER.get(item.getItemId()))
+                .addToBackStack(null)
+                .commit();
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -81,15 +87,13 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
     public void onBackPressed() {
         if(drawer.isDrawerOpen(GravityCompat.START)){
             drawer.closeDrawer(GravityCompat.START);
-        } else {
-            Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
-            if(fragment instanceof MainFragment){
-                super.onBackPressed();
-                return;
-            } else {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                            new MainFragment()).commit();
-            }
+            return;
+        }
+        if(getFragmentManager().getBackStackEntryCount() == 0) {
+            super.onBackPressed();
+        }
+        else {
+            getFragmentManager().popBackStack();
         }
     }
 

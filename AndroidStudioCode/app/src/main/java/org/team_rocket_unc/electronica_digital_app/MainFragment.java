@@ -16,6 +16,8 @@ import org.team_rocket_unc.electronica_digital_app.units.unit_3_logic_functions.
 import org.team_rocket_unc.electronica_digital_app.units.unit_4_karnaugh.KarnaughToolFragment;
 import org.team_rocket_unc.electronica_digital_app.units.unit_5_datasheets.DatasheetsToolFragment;
 
+import java.util.Optional;
+
 public class MainFragment extends Fragment {
 
     private Button calculators;
@@ -55,7 +57,9 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, targetToolFragment).commit();
+                        .replace(R.id.fragment_container, targetToolFragment)
+                        .addToBackStack(null)
+                        .commit();
             }
         });
     }
