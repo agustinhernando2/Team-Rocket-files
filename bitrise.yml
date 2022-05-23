@@ -54,6 +54,10 @@ workflows:
         inputs:
         - project_location: "$PROJECT_LOCATION"
         - variant: "$VARIANT"
+    - android-build-for-ui-testing@0:
+        inputs:
+        - variant: debug
+        - module: "$MODULE"
     - cache-push@2: {}
     - deploy-to-bitrise-io@2: {}
 meta:
