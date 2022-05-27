@@ -14,7 +14,7 @@ public class GeneralTests {
 
     @Test
     public void testVersion() {
-        int EXPECTED_MIN_SDK_VERSION = 21;
+        int EXPECTED_MIN_SDK_VERSION = 11;
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         Assert.assertEquals(EXPECTED_MIN_SDK_VERSION, appContext.getApplicationInfo().minSdkVersion);
     }
