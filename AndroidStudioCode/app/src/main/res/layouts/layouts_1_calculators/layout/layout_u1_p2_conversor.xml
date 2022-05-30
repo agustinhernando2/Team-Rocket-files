@@ -14,18 +14,25 @@
         android:text="CONVERSOR"
         android:textSize="30sp"
         android:gravity="center_horizontal"/>
+
+    <Spinner
+        android:id="@+id/inputSystemDDB"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Input decimal:"
-        android:textSize="15sp"
+        android:textSize="30sp"
         android:gravity="center_horizontal"/>
     <EditText
-        android:id="@+id/decimalInput"
-        android:layout_width="100dp"
+        android:id="@+id/conversorInput"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:gravity="center"
-        android:inputType="number"
+        android:inputType="textNoSuggestions"
         android:text="0"
         android:textSize="20sp" />
     <TextView
@@ -36,6 +43,32 @@
         android:gravity="center_horizontal"/>
     <TextView
         android:id="@+id/binaryOutput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output decimal:"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/decimalOutput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output hexadecimal:"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/hexaOutput"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text=""

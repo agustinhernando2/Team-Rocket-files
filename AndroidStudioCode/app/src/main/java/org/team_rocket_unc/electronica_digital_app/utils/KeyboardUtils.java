@@ -2,6 +2,8 @@ package org.team_rocket_unc.electronica_digital_app.utils;
 
 import android.app.Activity;
 import android.text.Editable;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
@@ -14,6 +16,9 @@ import org.w3c.dom.Text;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 public final class KeyboardUtils {
 
@@ -57,6 +62,15 @@ public final class KeyboardUtils {
                 return false;
             }
         });
+    }
+
+    public static InputFilter createInputFilter(String allowedCharacters) {
+        return new InputFilter() {
+            @Override
+            public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+                return source.toString().replaceAll("[^" + allowedCharacters + "]", "").toUpperCase();
+            }
+        };
     }
 
 }
