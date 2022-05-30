@@ -4,12 +4,12 @@ public class FullOutput {
 
     private final String binaryOutput;
     private final String decimalOutput;
-    private final String hexaOutput;
+    private final String hexOutput;
 
-    public FullOutput(String binaryOutput, String decimalOutput, String hexaOutput) {
+    public FullOutput(String binaryOutput, String decimalOutput, String hexOutput) {
         this.binaryOutput = binaryOutput;
         this.decimalOutput = decimalOutput;
-        this.hexaOutput = hexaOutput;
+        this.hexOutput = hexOutput;
     }
 
     public String getBinaryOutput() {
@@ -20,8 +20,8 @@ public class FullOutput {
         return decimalOutput;
     }
 
-    public String getHexaOutput() {
-        return hexaOutput;
+    public String getHexOutput() {
+        return hexOutput;
     }
 
 }
