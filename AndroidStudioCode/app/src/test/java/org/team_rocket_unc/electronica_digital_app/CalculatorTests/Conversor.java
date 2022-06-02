@@ -14,7 +14,19 @@ public class Conversor {
         staticConversion.setConversionBase(0);
         staticConversion.updateInput("1111");
         assertEquals("1111",staticConversion.getOutput().getBinaryOutput());
+    }
+
+    @Test
+    public void testBinaryToDecimal() {
+        staticConversion.setConversionBase(0);
+        staticConversion.updateInput("1111");
         assertEquals("15",staticConversion.getOutput().getDecimalOutput());
+    }
+
+    @Test
+    public void testBinaryToHexa() {
+        staticConversion.setConversionBase(0);
+        staticConversion.updateInput("1111");
         assertEquals("F",staticConversion.getOutput().getHexOutput());
     }
 
@@ -22,8 +34,20 @@ public class Conversor {
     public void testDecimalInput() {
         staticConversion.setConversionBase(1);
         staticConversion.updateInput("256");
-        assertEquals("100000000",staticConversion.getOutput().getBinaryOutput());
         assertEquals("256",staticConversion.getOutput().getDecimalOutput());
+    }
+
+    @Test
+    public void testDecimalToBinary() {
+        staticConversion.setConversionBase(1);
+        staticConversion.updateInput("256");
+        assertEquals("100000000",staticConversion.getOutput().getBinaryOutput());
+    }
+
+    @Test
+    public void testDecimalToHexa() {
+        staticConversion.setConversionBase(1);
+        staticConversion.updateInput("256");
         assertEquals("100",staticConversion.getOutput().getHexOutput());
     }
 
@@ -31,9 +55,21 @@ public class Conversor {
     public void testHexaInput() {
         staticConversion.setConversionBase(2);
         staticConversion.updateInput("F5");
-        assertEquals("11110101",staticConversion.getOutput().getBinaryOutput());
-        assertEquals("245",staticConversion.getOutput().getDecimalOutput());
         assertEquals("F5",staticConversion.getOutput().getHexOutput());
+    }
+
+    @Test
+    public void testHexaToBinary() {
+        staticConversion.setConversionBase(2);
+        staticConversion.updateInput("F5");
+        assertEquals("11110101",staticConversion.getOutput().getBinaryOutput());
+    }
+
+    @Test
+    public void testHexaToDecimal() {
+        staticConversion.setConversionBase(2);
+        staticConversion.updateInput("F5");
+        assertEquals("245",staticConversion.getOutput().getDecimalOutput());
     }
 
     @Test
@@ -54,7 +90,7 @@ public class Conversor {
         staticConversion.setConversionBase(1);
         NumberFormatException exception = null;
         try {
-            staticConversion.updateInput("ZV");
+            staticConversion.updateInput("AF");
         } catch (NumberFormatException e){
             exception=e;
         }
