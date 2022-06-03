@@ -1,0 +1,15 @@
+/AndroidStudioCode/*.iml
+/AndroidStudioCode/.gradle
+/AndroidStudioCode/local.properties
+/AndroidStudioCode/.idea/caches
+/AndroidStudioCode/.idea/libraries
+/AndroidStudioCode/.idea/modules.xml
+/AndroidStudioCode/.idea/workspace.xml
+/AndroidStudioCode/.idea/navEditor.xml
+/AndroidStudioCode/.idea/assetWizardSettings.xml
+/AndroidStudioCode/.DS_Store
+/AndroidStudioCode/build
+/AndroidStudioCode/captures
+/AndroidStudioCode/.externalNativeBuild
+/AndroidStudioCode/.cxx
+/AndroidStudioCode/local.properties
