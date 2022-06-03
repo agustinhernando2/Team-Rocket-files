@@ -72,55 +72,27 @@ public class Conversor {
         assertEquals("245",staticConversion.getOutput().getDecimalOutput());
     }
 
-    @Test
+    @Test(expected = NumberFormatException.class)
     public void testInputForbiddenBinary() {
         staticConversion.setConversionBase(0);
-        NumberFormatException exception = null;
-        try {
-            staticConversion.updateInput("50");
-        } catch (NumberFormatException e){
-            exception=e;
-        }
-
-        assertNotNull(exception);
+        staticConversion.updateInput("50");
     }
 
-    @Test
+    @Test(expected = NumberFormatException.class)
     public void testInputForbiddenDecimal() {
         staticConversion.setConversionBase(1);
-        NumberFormatException exception = null;
-        try {
-            staticConversion.updateInput("AF");
-        } catch (NumberFormatException e){
-            exception=e;
-        }
-
-        assertNotNull(exception);
+        staticConversion.updateInput("AF");
     }
 
-    @Test
+    @Test(expected = NumberFormatException.class)
     public void testInputForbiddenHexa() {
         staticConversion.setConversionBase(2);
-        NumberFormatException exception = null;
-        try {
-            staticConversion.updateInput("24Y");
-        } catch (NumberFormatException e){
-            exception=e;
-        }
-
-        assertNotNull(exception);
+        staticConversion.updateInput("24Y");
     }
 
-    @Test
+    @Test(expected = NumberFormatException.class)
     public void testForbiddenCharacters() {
-        NumberFormatException exception = null;
-        try {
-            staticConversion.updateInput(" + *");
-        } catch (NumberFormatException e){
-            exception=e;
-        }
-
-        assertNotNull(exception);
+        staticConversion.updateInput(" + *");
     }
 
 }
