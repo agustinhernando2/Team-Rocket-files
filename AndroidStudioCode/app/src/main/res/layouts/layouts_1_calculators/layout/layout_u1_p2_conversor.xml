@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal"
+    android:paddingTop="100dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,5 +12,65 @@
         android:text="CONVERSOR"
         android:textSize="30sp"
         android:gravity="center_horizontal"/>
+
+    <Spinner
+        android:id="@+id/inputSystemDDB"
+        android:layout_width="150dp"
+        android:layout_height="30sp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input:"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/conversorInput"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
+        android:text="0"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output binario:"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/binaryOutput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output decimal:"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/decimalOutput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output hexadecimal:"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/hexaOutput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"/>
 
 </LinearLayout>

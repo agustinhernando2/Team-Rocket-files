@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number_system">
+        <item>Binario</item>
+        <item>Decimal</item>
+        <item>Hexa</item>
+    </string-array>
+</resources>

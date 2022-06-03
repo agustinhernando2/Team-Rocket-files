@@ -28,9 +28,8 @@ public class CalculatorMenuFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.layout_u1_p1_menu,container,false);
 
-        setTool(conversorButton, R.id.buttonConversion, new InstructionsFragment("Conversor de sistemas de unidades",
-                "Instrucciones del conversor",
-                new ConversionToolFragment()));
+        setTool(conversorButton, R.id.buttonConversion, new InstructionsFragment(getString(R.string.u1_p2_conversor_title),
+                getString(R.string.u1_p2_conversor_instructions), new ConversionToolFragment()));
         setTool(conversorButton, R.id.buttonOhm, new InstructionsFragment("Circuito ley de ohm",
                 "Instrucciones del circuito de la ley de ohm",
                 new OhmToolFragment()));
