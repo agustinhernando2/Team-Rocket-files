@@ -5,4 +5,10 @@
         <item>Decimal</item>
         <item>Hexa</item>
     </string-array>
+
+    <string-array name="pdfs_names">
+        <item>cd4081</item>
+        <item>lm555</item>
+        <item>cd4011</item>
+    </string-array>
 </resources>
