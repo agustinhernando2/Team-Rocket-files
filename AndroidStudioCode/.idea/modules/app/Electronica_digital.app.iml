@@ -45,6 +45,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/res/layouts/layouts_5_datasheets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/res/layouts/layouts_main" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debugUnitTest/out" isTestSource="true" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/build" />
     </content>

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Seleccionar DataSheet"
+        android:text="Seleccionar Datasheet"
         android:textSize="20sp" />
 
     <Spinner
@@ -21,12 +21,10 @@
         android:layout_height="40sp"
         android:textSize="25sp"/>
 
-
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfView"
         android:layout_width="match_parent"
         android:layout_height="627dp"
         android:layout_marginTop="10dp" />
-
 
 </LinearLayout>
