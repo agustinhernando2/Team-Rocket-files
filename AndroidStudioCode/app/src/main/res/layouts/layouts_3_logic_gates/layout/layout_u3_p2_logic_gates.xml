@@ -10,8 +10,32 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="COMPUERTAS LÓGICAS"
-        android:textSize="30sp"
-        android:gravity="center_horizontal"/>
+        android:textSize="30sp" />
+    <CheckBox
+        android:id="@+id/cBoxGateA_in1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entrada 1 de la and "
+        android:checked="true"
+        />
+    <CheckBox
+        android:id="@+id/cBoxGateA_in2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entrada 2 de la and "
+        android:checked="true"
+
+        />
+    <CheckBox
+        android:id="@+id/cbOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="output"
+        android:checked="true"
+
+
+        />
 
 </LinearLayout>
