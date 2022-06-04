@@ -17,25 +17,65 @@
         android:id="@+id/cBoxGateA_in1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="entrada 1 de la and "
-        android:checked="true"
-        />
+        android:text="gateA in 1 "
+        android:checked="false"/>
     <CheckBox
         android:id="@+id/cBoxGateA_in2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="entrada 2 de la and "
-        android:checked="true"
-
-        />
+        android:text="gateA in 2 "
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/cBoxGateB_in1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gateB in 1 "
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/cBoxGateB_in2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gateB in 2 "
+        android:checked="false"/>
     <CheckBox
         android:id="@+id/cbOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="output"
-        android:checked="true"
+        android:checked="false"
+        android:enabled="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+        <Spinner
+            android:id="@+id/spinnerG1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:popupBackground="@android:color/white"
+            android:scrollbars="none"
+            android:spinnerMode="dropdown" />
+        <Spinner
+            android:id="@+id/spinnerG2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:popupBackground="@android:color/white"
+            android:scrollbars="none"
+            android:spinnerMode="dropdown"/>
+        <Spinner
+            android:id="@+id/spinnerG3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:popupBackground="@android:color/white"
+            android:scrollbars="none"
+            android:spinnerMode="dropdown" />
 
-
-        />
-
+    </LinearLayout>
 </LinearLayout>
