@@ -25,7 +25,8 @@
         <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p1_menu.xml" value="0.115861479264643" />
         <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p2_conversor.xml" value="0.264" />
         <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p4_ohm.xml" value="0.12141941000427534" />
-        <entry key="app/src/main/res/layouts/layouts_2_color_code_resistor/layout/layout_u2_p1_color.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u2_p1_color_band_item.xml" value="0.140625" />
+        <entry key="app/src/main/res/layouts/layouts_2_color_code_resistor/layout/layout_u2_p1_color.xml" value="0.1651376146788991" />
         <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p1_menu.xml" value="0.12141941000427534" />
         <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p2_logic_gates.xml" value="0.12141941000427534" />
         <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p3_truth_table.xml" value="0.12141941000427534" />

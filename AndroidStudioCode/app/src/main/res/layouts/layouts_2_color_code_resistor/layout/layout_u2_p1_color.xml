@@ -5,13 +5,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="COLORES DE RESISTENCIAS"
+        android:text="@string/u2_p1_color_title"
         android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <org.team_rocket_unc.electronica_digital_app.units.unit_2_color_code_resistor.ResistorGraph
+        android:id="@+id/resistorGraph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resistencia:"
+        android:textSize="15sp"
         android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/resistorOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10k&#937;"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de input:"/>
+    <Spinner
+        android:id="@+id/resistorInputModeDDP"
+        android:layout_width="200dp"
+        android:layout_height="50sp"
+        android:textSize="30sp"
+        android:paddingBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/resistorColorInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionador de colores:"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/inputColorBand1DDB"
+                android:layout_width="80dp"
+                android:layout_height="30dp"/>
+            <Spinner
+                android:id="@+id/inputColorBand2DDB"
+                android:layout_width="80dp"
+                android:layout_height="30dp"/>
+            <Spinner
+                android:id="@+id/inputColorBand3DDB"
+                android:layout_width="80dp"
+                android:layout_height="30dp"/>
+            <Spinner
+                android:id="@+id/inputColorBand4DDB"
+                android:layout_width="80dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resistorValueInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resistencia estándar:"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+        <Spinner
+            android:id="@+id/inputStandardResistorDDB"
+            android:layout_width="200dp"
+            android:layout_height="50sp"
+            android:textSize="30sp"/>
+    </LinearLayout>
 
 </LinearLayout>

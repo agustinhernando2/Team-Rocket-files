@@ -16,4 +16,21 @@
     <color name="cyan">#00FFFF</color>
     <color name="magenta">#FF00FF</color>
     <color name="background">#5A5A64</color>
+
+    <color name="resistor">#EBB134</color>
+    <color name="BROWN">#761d1d</color>
+    <color name="RED">#cc0000</color>
+    <color name="ORANGE">#ffa500</color>
+    <color name="YELLOW">#ffff00</color>
+    <color name="GREEN">#008000</color>
+    <color name="BLUE">#0000cc</color>
+    <color name="VIOLET">#ee82ee</color>
+    <color name="GREY">#808080</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="GOLD">#ffd700</color>
+    <color name="SILVER">#c0c0c0</color>
+
+
+
+
 </resources>

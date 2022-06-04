@@ -4,4 +4,6 @@
     <string name="navigation_drawer_close">Cerrar menu</string>
     <string name="u1_p2_conversor_title">Conversor de sistemas de unidades</string>
     <string name="u1_p2_conversor_instructions">En esta herramienta, usted podrá convertir un input a binario, decimal o hexa. Solo tendrá que seleccionar el sistema en el que se ingresa</string>
+    <string name="u2_p1_color_title">Código de colores de resistencias</string>
+    <string name="u2_p1_color_instructions">En esta herramienta, usted podrá probar el código de colores de resistencias de forma dinámica cambiando los colores de las bandas o los valores estándar</string>
 </resources>
