@@ -5,4 +5,13 @@
         <item>Decimal</item>
         <item>Hexa</item>
     </string-array>
+
+    <string-array name="logic_gates">
+        <item>AND</item>
+        <item>OR</item>
+        <item>NAND</item>
+        <item>NOR</item>
+        <item>NOT</item>
+    </string-array>
+
 </resources>
