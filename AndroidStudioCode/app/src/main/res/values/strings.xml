@@ -4,4 +4,6 @@
     <string name="navigation_drawer_close">Cerrar menu</string>
     <string name="u1_p2_conversor_title">Conversor de sistemas de unidades</string>
     <string name="u1_p2_conversor_instructions">En esta herramienta, usted podrá convertir un input a binario, decimal o hexa. Solo tendrá que seleccionar el sistema en el que se ingresa</string>
+    <string name="u1_p_ohm_title">Ley de Ohm y Potencia</string>
+    <string name="u1_p_ohm_instructions">En esta calculadora, usted podrá modificar y calcular los parámetros de las variables Resistencia, Tensión, Corriente y Potencia</string>
 </resources>
