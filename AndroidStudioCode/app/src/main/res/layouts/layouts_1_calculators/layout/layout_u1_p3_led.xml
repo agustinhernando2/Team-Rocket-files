@@ -27,64 +27,116 @@
         android:layout_height="40sp"
         android:textSize="30sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="183dp"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="I="
-        android:textSize="20sp" />
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/intensityInput"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:inputType="numberSigned|number|numberDecimal"
-        android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="I=   "
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/intensityInput"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[A]"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Vf= "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tensionInput"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[V]"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="195dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="R=  "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/resistanceOutput"
+            android:layout_width="126dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[Ω]"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Vf="
-        android:textSize="20sp" />
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/tensionInput"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:inputType="numberSigned|number|numberDecimal"
-        android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Vd="
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="R="
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/ledTensionOutput"
+            android:layout_width="126dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/resistanceOutput"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text=""
-        android:textSize="20sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Vd="
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/ledTensionOutput"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text=""
-        android:textSize="20sp" />
+        <TextView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[V]"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </LinearLayout>
