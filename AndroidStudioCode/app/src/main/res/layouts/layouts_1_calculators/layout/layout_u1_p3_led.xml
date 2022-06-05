@@ -27,8 +27,14 @@
         android:layout_height="40sp"
         android:textSize="30sp" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="277dp"
+        android:layout_height="217dp"
+        app:srcCompat="@drawable/led_img" />
+
     <LinearLayout
-        android:layout_width="183dp"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -48,7 +54,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="[A]"
@@ -56,7 +62,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="190dp"
+        android:layout_width="205dp"
         android:layout_height="56dp"
         android:orientation="horizontal">
 
@@ -64,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Vf= "
+            android:text="Vs= "
             android:textSize="20sp" />
 
         <EditText
@@ -76,7 +82,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="[V]"
