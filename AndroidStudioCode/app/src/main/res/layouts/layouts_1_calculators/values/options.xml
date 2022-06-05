@@ -5,4 +5,13 @@
         <item>Decimal</item>
         <item>Hexa</item>
     </string-array>
+
+    <string-array name="led_color">
+        <item>Rojo</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Naranja</item>
+        <item>Blanco</item>
+        <item>Azul</item>
+    </string-array>
 </resources>

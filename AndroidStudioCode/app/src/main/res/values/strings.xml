@@ -4,4 +4,6 @@
     <string name="navigation_drawer_close">Cerrar menu</string>
     <string name="u1_p2_conversor_title">Conversor de sistemas de unidades</string>
     <string name="u1_p2_conversor_instructions">En esta herramienta, usted podrá convertir un input a binario, decimal o hexa. Solo tendrá que seleccionar el sistema en el que se ingresa</string>
+    <string name="u1_p3_led_title">Conexión de LED</string>
+    <string name="u1_p3_led_instructions">Em esta calculadora, usted podrá calcular la resistencia necesaria para limitar la corriente que circulará por un LED. Se deberá ingresar el color del LED, la tensión de fuente y la intensidad de corriente necesaria para encender el LED</string>
 </resources>
