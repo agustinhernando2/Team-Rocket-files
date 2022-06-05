@@ -16,15 +16,15 @@ public class LedCircuitToolModel {
         return Double.toString(ledTension);
     }
 
-    public void calculate(String in, String sourceTension) throws NumberFormatException{
+    public void calculate(String current, String sourceTension) throws NumberFormatException{
         try {
-            this.resistance = (Integer.parseInt(sourceTension) - this.ledTension) / Integer.parseInt(in);
+            this.resistance = (Double.parseDouble(sourceTension) - this.ledTension) / Double.parseDouble(current);
         } catch (NumberFormatException e){
             System.out.println(e.getMessage());
         }
     }
 
     public String getResistance() {
-        return Double.toString(resistance);
+        return Integer.toString((int) Math.round(resistance));
     }
 }
