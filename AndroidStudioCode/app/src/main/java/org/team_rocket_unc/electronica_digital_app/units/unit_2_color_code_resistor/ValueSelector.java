@@ -34,6 +34,7 @@ public class ValueSelector implements Subject {
         resetSelection();
     }
 
+    @Override
     public void setVisible(int visibility) {
         valueLayout.setVisibility(visibility);
     }

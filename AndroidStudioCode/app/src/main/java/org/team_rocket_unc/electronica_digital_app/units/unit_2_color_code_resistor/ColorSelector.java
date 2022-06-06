@@ -55,6 +55,7 @@ public class ColorSelector implements Subject {
         });
     }
 
+    @Override
     public void setVisible(int visibility) {
         colorInput.setVisibility(visibility);
     }

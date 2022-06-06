@@ -11,4 +11,6 @@ public interface Subject {
 
     void addObserver(Observer observers);
 
+    void setVisible(int visible);
+
 }

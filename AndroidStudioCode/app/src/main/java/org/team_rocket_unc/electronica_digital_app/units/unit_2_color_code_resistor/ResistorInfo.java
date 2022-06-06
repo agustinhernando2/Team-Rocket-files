@@ -5,6 +5,7 @@ import com.google.common.collect.HashBiMap;
 
 import org.team_rocket_unc.electronica_digital_app.R;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,7 +29,7 @@ public class ResistorInfo {
         COLOR_MAP.put(R.color.GREEN, 5);
         COLOR_MAP.put(R.color.BLUE, 6);
         COLOR_MAP.put(R.color.VIOLET, 7);
-        COLOR_MAP.put(R.color.GREY, 8);
+        COLOR_MAP.put(R.color.GRAY, 8);
         COLOR_MAP.put(R.color.WHITE, 9);
         MULTIPLIER_MAP.put(0, "");
         MULTIPLIER_MAP.put(1, "k");
@@ -55,13 +56,13 @@ public class ResistorInfo {
     }
 
     public ResistorInfo(int band1, int band2, int band3, int band4) {
-        long resistance = (long) ((COLOR_MAP.get(band1) * 10 + COLOR_MAP.get(band2)) * Math.pow(10, COLOR_MAP.get(band3)));
+        double resistance = (long) ((COLOR_MAP.get(band1) * 10 + COLOR_MAP.get(band2)) * Math.pow(10, COLOR_MAP.get(band3)));
         int multiplier = 0;
         while(resistance >= 1000) {
             multiplier++;
             resistance /= 1000;
         }
-        this.value = resistance + MULTIPLIER_MAP.get(multiplier) + '\u03A9'  + " \u00B1" + (band4 == R.color.GOLD ? 5 : 10) + "%";
+        this.value = new DecimalFormat("0.#").format(resistance) + MULTIPLIER_MAP.get(multiplier) + '\u03A9'  + " \u00B1" + (band4 == R.color.GOLD ? 5 : 10) + "%";
         this.band1 = band1;
         this.band2 = band2;
         this.band3 = band3;

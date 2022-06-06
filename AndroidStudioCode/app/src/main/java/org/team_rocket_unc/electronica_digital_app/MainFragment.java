@@ -35,8 +35,8 @@ public class MainFragment extends Fragment {
         view = inflater.inflate(R.layout.layout_start,container,false);
 
         setTool(calculators, R.id.buttonCalculators, new CalculatorMenuFragment());
-        setTool(colorCodeResistors, R.id.buttonColorCodeResistors, new InstructionsFragment("Código de colores de resistencias",
-                "En esta herramienta usted podrá ingresar las bandas de colores de una resistencia para conocer su valoro bien ingresar un valor para conocer las bandas correctas",
+        setTool(colorCodeResistors, R.id.buttonColorCodeResistors, new InstructionsFragment(getString(R.string.u2_p1_color_title),
+                getString(R.string.u2_p1_color_instructions),
                 new ColorCodeResistorsToolFragment()));
         setTool(logicFunctions, R.id.buttonLogicFunctions, new LogicFunctionsMenuFragment());
         setTool(karnaugh, R.id.buttonKarnaugh, new InstructionsFragment("Mapas de Karnaugh",

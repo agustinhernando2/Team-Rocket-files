@@ -27,7 +27,7 @@ public class BandColorAdaptor extends BaseAdapter {
             R.color.GREEN,   //GREEN
             R.color.BLUE,   //BLUE
             R.color.VIOLET,   //VIOLET
-            R.color.GREY,   //GREY
+            R.color.GRAY,   //GREY
             R.color.WHITE,   //WHITE
             R.color.GOLD,   //GOLD
             R.color.SILVER     //SILVER
