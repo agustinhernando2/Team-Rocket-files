@@ -3,7 +3,8 @@ package org.team_rocket_unc.electronica_digital_app.units.unit_3_logic_functions
 import java.util.Arrays;
 import java.util.List;
 
-public class ThruthTabeesToolModel {
+public class TruthTablesToolModel {
+
     private static final List<String> GATE_LIST = Arrays.asList("AND","OR","NAND","NOR","NOT");
 
     private String gate ="AND";
