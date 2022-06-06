@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.team_rocket_unc.electronica_digital_app.units.unit_3_logic_functions.p1_logic_gates.Gate;
 import org.team_rocket_unc.electronica_digital_app.units.unit_3_logic_functions.p1_logic_gates.LogicGatesModel;
 
+
 public class LogicGates {
 
     public Gate gateA = new Gate();
