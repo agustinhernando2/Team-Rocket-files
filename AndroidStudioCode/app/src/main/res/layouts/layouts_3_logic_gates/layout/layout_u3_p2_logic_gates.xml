@@ -14,7 +14,57 @@
         android:textSize="30sp"
         android:layout_marginBottom="30dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="6"
+            android:columnCount="1"
+            android:background="@drawable/background_box"
+            >
 
+            <CheckBox
+                android:id="@+id/cBoxGateA_in1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_row="0"
+                android:layout_column="0"
+
+                android:checked="false" />
+
+            <CheckBox
+                android:id="@+id/cBoxGateA_in2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_row="1"
+                android:layout_column="0"
+
+                android:layout_marginBottom="50dp"
+                android:checked="false" />
+
+            <CheckBox
+                android:id="@+id/cBoxGateB_in1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_row="4"
+                android:layout_column="0"
+
+                android:checked="false"/>
+            <CheckBox
+                android:id="@+id/cBoxGateB_in2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_row="5"
+                android:layout_column="0"
+
+                android:checked="false"/>
+        </GridLayout>
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,57 +123,26 @@
             android:src="@drawable/wire21"
             />
     </GridLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="15dp
-">
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="right">
+            android:gravity="center"
+            android:background="@drawable/background_box"
+            >
+
             <CheckBox
-                android:id="@+id/cBoxGateA_in1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GATE A input1 "
-                android:checked="false"/>
-            <CheckBox
-                android:id="@+id/cBoxGateA_in2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GATE A input2 "
-                android:checked="false"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="right">
-            <CheckBox
-                android:id="@+id/cBoxGateB_in1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GATE B input1 "
-                android:checked="false"/>
-            <CheckBox
-                android:id="@+id/cBoxGateB_in2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GATE B input2 "
-                android:checked="false"/>
+                android:id="@+id/cbOutput"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:enabled="false"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:checked="false" />
+
         </LinearLayout>
     </LinearLayout>
-    <CheckBox
-        android:id="@+id/cbOutput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OUTPUT"
-        android:checked="false"
-        android:enabled="false"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -140,6 +159,9 @@
             android:popupBackground="@android:color/white"
             android:scrollbars="none"
             android:spinnerMode="dropdown"
+            android:prompt=""
+
+
             />
         <Spinner
             android:id="@+id/spinnerG2"
