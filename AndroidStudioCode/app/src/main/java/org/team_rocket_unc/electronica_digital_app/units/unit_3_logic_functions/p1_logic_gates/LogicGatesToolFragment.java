@@ -28,10 +28,11 @@ public class LogicGatesToolFragment extends Fragment {
     LogicGatesModel logicGatesModel;
     Spinner gateTypeA;
     Spinner gateTypeB;
-    Spinner gateTypec;
+    Spinner gateTypeC;
     ImageView imgGateA;
     ImageView imgGateB;
     ImageView imgGateC;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -46,15 +47,13 @@ public class LogicGatesToolFragment extends Fragment {
         imgGateA = (ImageView) view.findViewById(R.id.imgGateA);
         imgGateB = (ImageView) view.findViewById(R.id.imgGateB);
         imgGateC = (ImageView) view.findViewById(R.id.imgGateC);
-
         gateA_in1= (CheckBox) view.findViewById(R.id.cBoxGateA_in1);
         gateA_in2= (CheckBox) view.findViewById(R.id.cBoxGateA_in2);
         gateB_in1= (CheckBox) view.findViewById(R.id.cBoxGateB_in1);
         gateB_in2= (CheckBox) view.findViewById(R.id.cBoxGateB_in2);
         gateTypeA = (Spinner) view.findViewById(R.id.spinnerG1);
         gateTypeB = (Spinner) view.findViewById(R.id.spinnerG2);
-        gateTypec = (Spinner) view.findViewById(R.id.spinnerG3);
-
+        gateTypeC = (Spinner) view.findViewById(R.id.spinnerG3);
         output= (CheckBox) view.findViewById(R.id.cbOutput);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(),
@@ -63,20 +62,13 @@ public class LogicGatesToolFragment extends Fragment {
 
         gateTypeA.setAdapter(adapter);
         gateTypeB.setAdapter(adapter);
-        gateTypec.setAdapter(adapter);
-
-
+        gateTypeC.setAdapter(adapter);
     }
-
-
-
-
 
     private void setUpUI() {
         logicGatesModel.updateImgOnStartFragment(imgGateA,imgGateB,imgGateC);
-        logicGatesModel.updateSeleccionOnStartFragment(gateTypeA, gateTypeB, gateTypec);
+        logicGatesModel.updateSeleccionOnStartFragment(gateTypeA, gateTypeB, gateTypeC);
         logicGatesModel.updateInputsOnStartFragment(gateA_in1,gateA_in2,gateB_in1,gateB_in2,output);
-
 
         gateA_in1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -128,7 +120,7 @@ public class LogicGatesToolFragment extends Fragment {
 
             }
         });
-        gateTypec.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        gateTypeC.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 onChangeSpinner();
@@ -147,10 +139,9 @@ public class LogicGatesToolFragment extends Fragment {
         logicGatesModel.setTypes(
                 gateTypeA.getSelectedItem().toString()
                 , gateTypeB.getSelectedItem().toString()
-                , gateTypec.getSelectedItem().toString());
+                , gateTypeC.getSelectedItem().toString());
 
         output.setChecked(logicGatesModel.getOutput());
-
     }
 
     private void onChangeBox() {
@@ -161,9 +152,6 @@ public class LogicGatesToolFragment extends Fragment {
                 gateB_in2.isChecked());
 
         output.setChecked(logicGatesModel.getOutput());
-
     }
-
-
 }
 

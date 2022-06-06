@@ -13,7 +13,6 @@
         android:text="COMPUERTAS LÓGICAS"
         android:textSize="30sp"
         android:layout_marginBottom="30dp"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,33 +27,27 @@
             android:columnCount="1"
             android:background="@drawable/background_box"
             >
-
             <CheckBox
                 android:id="@+id/cBoxGateA_in1"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_row="0"
                 android:layout_column="0"
-
                 android:checked="false" />
-
             <CheckBox
                 android:id="@+id/cBoxGateA_in2"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_row="1"
                 android:layout_column="0"
-
                 android:layout_marginBottom="50dp"
                 android:checked="false" />
-
             <CheckBox
                 android:id="@+id/cBoxGateB_in1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_row="4"
                 android:layout_column="0"
-
                 android:checked="false"/>
             <CheckBox
                 android:id="@+id/cBoxGateB_in2"
@@ -62,7 +55,6 @@
                 android:layout_height="25dp"
                 android:layout_row="5"
                 android:layout_column="0"
-
                 android:checked="false"/>
         </GridLayout>
     <GridLayout
@@ -79,7 +71,6 @@
             android:layout_row="0"
             android:layout_column="0"
             android:src="@drawable/and"
-
             />
         <ImageView
             android:id="@+id/imgGateB"
@@ -99,7 +90,6 @@
             android:src="@drawable/and"
             />
         <ImageView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -107,7 +97,6 @@
             android:src="@drawable/wire01"
             />
         <ImageView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -115,7 +104,6 @@
             android:src="@drawable/wire11"
             />
         <ImageView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -129,7 +117,6 @@
             android:gravity="center"
             android:background="@drawable/background_box"
             >
-
             <CheckBox
                 android:id="@+id/cbOutput"
                 android:layout_width="25dp"
@@ -139,7 +126,6 @@
                 android:enabled="false"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:checked="false" />
-
         </LinearLayout>
     </LinearLayout>
 
@@ -159,9 +145,6 @@
             android:popupBackground="@android:color/white"
             android:scrollbars="none"
             android:spinnerMode="dropdown"
-            android:prompt=""
-
-
             />
         <Spinner
             android:id="@+id/spinnerG2"
@@ -181,6 +164,5 @@
             android:popupBackground="@android:color/white"
             android:scrollbars="none"
             android:spinnerMode="dropdown" />
-
     </LinearLayout>
 </LinearLayout>
