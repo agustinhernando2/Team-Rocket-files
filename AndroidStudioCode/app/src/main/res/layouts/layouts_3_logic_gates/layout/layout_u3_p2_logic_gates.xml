@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="COMPUERTAS LÓGICAS"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"/>
 
 
     <GridLayout
@@ -76,7 +77,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginTop="15dp
+">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,13 +89,13 @@
                 android:id="@+id/cBoxGateA_in1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="gateA in 1 "
+                android:text="GATE A input1 "
                 android:checked="false"/>
             <CheckBox
                 android:id="@+id/cBoxGateA_in2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="gateA in 2 "
+                android:text="GATE A input2 "
                 android:checked="false"/>
         </LinearLayout>
         <LinearLayout
@@ -104,13 +107,13 @@
                 android:id="@+id/cBoxGateB_in1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="gateB in 1 "
+                android:text="GATE B input1 "
                 android:checked="false"/>
             <CheckBox
                 android:id="@+id/cBoxGateB_in2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="gateB in 2 "
+                android:text="GATE B input2 "
                 android:checked="false"/>
         </LinearLayout>
     </LinearLayout>
@@ -118,28 +121,31 @@
         android:id="@+id/cbOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="output"
+        android:text="OUTPUT"
         android:checked="false"
         android:enabled="false"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="right">
+        android:gravity="right"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp">
         <Spinner
             android:id="@+id/spinnerG1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="8dp"
             android:paddingLeft="8dp"
             android:popupBackground="@android:color/white"
             android:scrollbars="none"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            />
         <Spinner
             android:id="@+id/spinnerG2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="8dp"
             android:paddingLeft="8dp"
             android:popupBackground="@android:color/white"
             android:scrollbars="none"
@@ -148,7 +154,7 @@
             android:id="@+id/spinnerG3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="8dp"
             android:paddingLeft="8dp"
             android:popupBackground="@android:color/white"
             android:scrollbars="none"
