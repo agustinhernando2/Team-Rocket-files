@@ -44,8 +44,8 @@ public class MainFragment extends Fragment {
                         "con un mapa de Karnaugh. Para poder implementarlo computacionalmente se emplearán los algorítmos de Quine-McCliskey y Petrick.\n" +
                         "El usuario podrá optar por resolver su simplificación por cualquiera de estos algorítmos",
                 new KarnaughToolFragment()));
-        setTool(datasheets, R.id.buttonDatasheets, new InstructionsFragment("Datasheets",
-                "En esta sección usted encontrará acceso a las DataSheet de los chips más utilizados en la materia Electrónica digital 1",
+        setTool(datasheets, R.id.buttonDatasheets, new InstructionsFragment(getString(R.string.u5_p1_datasheets_title),
+                getString(R.string.u5_p1_datasheets_instructions),
                 new DatasheetsToolFragment()));
 
         return view;

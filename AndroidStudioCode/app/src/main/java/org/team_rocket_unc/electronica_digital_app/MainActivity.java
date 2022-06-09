@@ -3,6 +3,7 @@ package org.team_rocket_unc.electronica_digital_app;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, new MainFragment()).commit();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     }
 
     @Override

@@ -5,14 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:layout_marginTop="20dp"
+    android:gravity="center_horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DATASHEETS"
-        android:textSize="30sp"
-        android:gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:text="Seleccionar Datasheet"
+        android:textSize="20sp" />
 
+    <Spinner
+        android:id="@+id/pdfSel"
+        android:layout_width="150dp"
+        android:layout_height="40sp"
+        android:textSize="25sp"/>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>
