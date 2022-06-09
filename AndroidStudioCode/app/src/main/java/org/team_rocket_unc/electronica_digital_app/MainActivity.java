@@ -25,16 +25,19 @@ import org.team_rocket_unc.electronica_digital_app.units.unit_5_datasheets.Datas
 
 public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final Map<Integer, Fragment> FRAGMENT_GETTER;
-    private static final Map<Integer, Fragment> PREVIOUS_FRAGMENT_GETTER;
+    private Map<Integer, Fragment> fragmentGetter;
     private DrawerLayout drawer;
 
-    static {
-        FRAGMENT_GETTER = new HashMap<Integer, Fragment>() {{
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.layout_main);
+
+        fragmentGetter = new HashMap<Integer, Fragment>() {{
             put(R.id.start, new MainFragment());
             put(R.id.calculators, new CalculatorMenuFragment());
-            put(R.id.resistorColorCode, new InstructionsFragment("Código de colores de resistencias",
-                    "En esta herramienta usted podrá ingresar las bandas de colores de una resistencia para conocer su valoro bien ingresar un valor para conocer las bandas correctas",
+            put(R.id.resistorColorCode, new InstructionsFragment(getString(R.string.u2_p1_color_title),
+                    getString(R.string.u2_p1_color_instructions),
                     new ColorCodeResistorsToolFragment()));
             put(R.id.logicFunctions, new LogicFunctionsMenuFragment());
             put(R.id.karnaugh, new InstructionsFragment("Mapas de Karnaugh",
@@ -46,17 +49,6 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                     "En esta sección usted encontrará acceso a las DataSheet de los chips más utilizados en la materia Electrónica digital 1",
                     new DatasheetsToolFragment()));
         }};
-
-        PREVIOUS_FRAGMENT_GETTER = new HashMap<Integer, Fragment>() {{
-            put(R.id.calculators, new MainFragment());
-
-        }};
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -78,7 +70,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container, FRAGMENT_GETTER.get(item.getItemId()))
+                .replace(R.id.fragment_container, fragmentGetter.get(item.getItemId()))
                 .addToBackStack(null)
                 .commit();
         drawer.closeDrawer(GravityCompat.START);
