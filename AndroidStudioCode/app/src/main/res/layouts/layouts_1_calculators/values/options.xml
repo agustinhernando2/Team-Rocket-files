@@ -12,6 +12,7 @@
         <item>NOR</item>
         <item>XOR</item>
         <item>XNOR</item>
+    </string-array>
     <string-array name="resistor_input_mode">
         <item>Valor</item>
         <item>Colores</item>
