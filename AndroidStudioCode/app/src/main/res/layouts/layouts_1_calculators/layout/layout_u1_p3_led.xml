@@ -50,7 +50,7 @@
             android:layout_width="124dp"
             android:layout_height="50dp"
             android:gravity="center"
-            android:inputType="numberSigned|number|numberDecimal"
+            android:inputType="number|numberDecimal"
             android:textSize="20sp" />
 
         <TextView
@@ -78,7 +78,7 @@
             android:layout_width="127dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:inputType="numberSigned|number|numberDecimal"
+            android:inputType="number|numberDecimal"
             android:textSize="20sp" />
 
         <TextView

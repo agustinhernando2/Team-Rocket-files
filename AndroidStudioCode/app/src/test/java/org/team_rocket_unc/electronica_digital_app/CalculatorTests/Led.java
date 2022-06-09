@@ -16,16 +16,8 @@ public class Led {
     }
 
     @Test
-    public void testNegativeInput() {
-        staticLed.setLedTension(0);
-        staticLed.calculate("-0.015", "3");
-        assertEquals("-73", staticLed.getResistance());
-    }
-
-    @Test
     public void checkColorSelector() {
         staticLed.setLedTension(4);
         assertEquals("3.4", staticLed.getLedTension());
     }
-
 }
