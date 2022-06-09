@@ -24,10 +24,10 @@ public class OhmToolModel {
         return String.format("%.2f", tension);
     }
     public String getCurrent(){
-        return String.format("%.2f", current);
+        return String.format("%.3f", current);
     }
     public String getResistance(){
-        return String.format("%.2f", resistance);
+        return String.format("%.0f", resistance);
     }
     public String getPower(){return String.format("%.2f", power);}
 
