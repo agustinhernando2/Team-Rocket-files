@@ -14,6 +14,12 @@
         android:text="Ley de Ohm y Potencia"
         android:textSize="30sp" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ley_ohm_img" />
+
     <LinearLayout
         android:layout_width="229dp"
         android:layout_height="wrap_content"
