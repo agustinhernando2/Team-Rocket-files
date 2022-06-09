@@ -26,8 +26,9 @@ public class LogicFunctionsMenuFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.layout_u3_p1_menu,container,false);
 
-        setTool(truthTableButton, R.id.buttonTruthTable, new InstructionsFragment("Tabla de verdad",
-                "Instrucciones de la tabla de verdad",
+        setTool(truthTableButton, R.id.buttonTruthTable, new InstructionsFragment(
+                getString(R.string.u3_p3_logic_gates_title),
+                getString(R.string.u3_p3_logic_gates_instructions),
                 new TruthTablesToolFragment()));
         setTool(logicGatesButton, R.id.buttonGateConection, new InstructionsFragment(getString(R.string.u3_p2_circuit_logic_gates_title),
                 getString(R.string.u3_p2_circuit_logic_gates_instructions),

@@ -33,8 +33,8 @@ public class CalculatorMenuFragment extends Fragment {
         setTool(conversorButton, R.id.buttonOhm, new InstructionsFragment("Circuito ley de ohm",
                 "Instrucciones del circuito de la ley de ohm",
                 new OhmToolFragment()));
-        setTool(conversorButton, R.id.buttonLed, new InstructionsFragment("Circuito con LED",
-                "Instrucciones del circuito con LED",
+        setTool(conversorButton, R.id.buttonLed, new InstructionsFragment(getString(R.string.u1_p3_led_title),
+                getString(R.string.u1_p3_led_instructions),
                 new LedCircuitToolFragment()));
         return view;
     }
