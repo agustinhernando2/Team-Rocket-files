@@ -4,11 +4,10 @@
     <string name="navigation_drawer_close">Cerrar menu</string>
     <string name="u1_p2_conversor_title">Conversor de sistemas de unidades</string>
     <string name="u1_p2_conversor_instructions">En esta herramienta, usted podrá convertir un input a binario, decimal o hexa. Solo tendrá que seleccionar el sistema en el que se ingresa</string>
-
+    <string name="u1_p3_led_title">Conexión de LED</string>
+    <string name="u1_p3_led_instructions">En esta calculadora, usted podrá calcular la resistencia necesaria para limitar la corriente que circulará por un LED. Se deberá ingresar el color del LED, la tensión de fuente y la intensidad de corriente necesaria para encender el LED</string>
     <string name="u3_p3_logic_gates_title">Tabla de verdad</string>
     <string name="u3_p3_logic_gates_instructions">En esta herramienta podrá ver la tabla de verdad de las 5 compuertas más usadas</string>
-
     <string name="u5_p1_datasheets_title">Datasheets</string>
     <string name="u5_p1_datasheets_instructions">En esta sección usted encontrará acceso a las DataSheet de los chips más utilizados en la materia Electrónica digital 1</string>
-
 </resources>
