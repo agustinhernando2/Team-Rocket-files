@@ -29,7 +29,7 @@
         <entry key="app/src/main/res/layouts/layouts_2_color_code_resistor/layout/layout_u2_p1_color.xml" value="0.1651376146788991" />
         <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p1_menu.xml" value="0.12141941000427534" />
         <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p2_logic_gates.xml" value="0.12141941000427534" />
-        <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p3_truth_table.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p3_truth_table.xml" value="0.25" />
         <entry key="app/src/main/res/layouts/layouts_4_karnaugh/layout/layout_u4_p1_karnaugh.xml" value="0.12141941000427534" />
         <entry key="app/src/main/res/layouts/layouts_5_datasheets/layout/layout_u5_p1_datasheets.xml" value="0.1" />
         <entry key="app/src/main/res/layouts/layouts_main/layout/layout_main.xml" value="0.12141941000427534" />
