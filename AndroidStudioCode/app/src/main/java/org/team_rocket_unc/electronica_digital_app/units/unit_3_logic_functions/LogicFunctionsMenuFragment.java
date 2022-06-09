@@ -29,8 +29,8 @@ public class LogicFunctionsMenuFragment extends Fragment {
         setTool(truthTableButton, R.id.buttonTruthTable, new InstructionsFragment("Tabla de verdad",
                 "Instrucciones de la tabla de verdad",
                 new TruthTablesToolFragment()));
-        setTool(logicGatesButton, R.id.buttonGateConection, new InstructionsFragment("Compuertas lógicas",
-                "Instrucciones para las compuertas lógicas",
+        setTool(logicGatesButton, R.id.buttonGateConection, new InstructionsFragment(getString(R.string.u3_p2_circuit_logic_gates_title),
+                getString(R.string.u3_p2_circuit_logic_gates_instructions),
                 new LogicGatesToolFragment()));
         return view;
     }
