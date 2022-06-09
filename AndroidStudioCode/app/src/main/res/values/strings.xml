@@ -8,6 +8,8 @@
     <string name="u1_p3_led_instructions">En esta calculadora, usted podrá calcular la resistencia necesaria para limitar la corriente que circulará por un LED. Se deberá ingresar el color del LED, la tensión de fuente y la intensidad de corriente necesaria para encender el LED</string>  
     <string name="u2_p1_color_title">Código de colores de resistencias</string>
     <string name="u2_p1_color_instructions">En esta herramienta, usted podrá probar el código de colores de resistencias de forma dinámica cambiando los colores de las bandas o los valores estándar</string>
+    <string name="u3_p2_circuit_logic_gates_title">Compuertas lógicas</string>
+    <string name="u3_p2_circuit_logic_gates_instructions">En esta herramienta podrá interactuar con un circuito básico. Debes seleccionar cada tipo de compuerta del circuito, puedes modificar sus entradas y observar el resultado</string>
     <string name="u3_p3_logic_gates_title">Tabla de verdad</string>
     <string name="u3_p3_logic_gates_instructions">En esta herramienta podrá ver la tabla de verdad de las 5 compuertas más usadas</string>
     <string name="u5_p1_datasheets_title">Datasheets</string>

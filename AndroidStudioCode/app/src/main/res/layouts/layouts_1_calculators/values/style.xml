@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="colored_checkBox" parent="Theme.AppCompat.Light">
+        <item name="android:colorAccent">@android:color/holo_green_dark</item>
+        <item name="android:textColorSecondary">@android:color/holo_red_dark</item>
+    </style>
+</resources>
