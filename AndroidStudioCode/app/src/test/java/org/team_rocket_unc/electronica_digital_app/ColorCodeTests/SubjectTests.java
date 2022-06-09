@@ -9,21 +9,38 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.powermock.reflect.Whitebox;
 import org.team_rocket_unc.electronica_digital_app.R;
 import org.team_rocket_unc.electronica_digital_app.units.unit_2_color_code_resistor.Observer;
 import org.team_rocket_unc.electronica_digital_app.units.unit_2_color_code_resistor.ResistorGraph;
 import org.team_rocket_unc.electronica_digital_app.units.unit_2_color_code_resistor.ResistorInfo;
 import org.team_rocket_unc.electronica_digital_app.units.unit_2_color_code_resistor.ValueSelector;
+import org.testng.mustache.Value;
 
-public class ValueSelectorTests {
+@RunWith(MockitoJUnitRunner.class)
+public class SubjectTests {
 
-    View mockView = Mockito.mock(View.class);
-    LinearLayout mockedLayout = Mockito.mock(LinearLayout.class);
-    Spinner mockedSpinner = Mockito.mock(Spinner.class);
-    Observer mockObserver = Mockito.mock(ResistorGraph.class);
-    ResistorInfo mockedResistorInfo = Mockito.mock(ResistorInfo.class);
-    Context mockedContext = Mockito.mock(Context.class);
+    @Mock
+    View mockView;
+
+    @Mock
+    LinearLayout mockedLayout;
+
+    @Mock
+    Spinner mockedSpinner;
+
+    @Mock
+    Observer mockObserver;
+
+    @Mock
+    ResistorInfo mockedResistorInfo;
+
+    @Mock
+    Context mockedContext;
 
     @Before
     public void setupMockView() {
@@ -32,9 +49,9 @@ public class ValueSelectorTests {
         Mockito.when(mockView.getContext()).thenReturn(mockedContext);
     }
 
-    @Ignore("The mocking of ArrayAdapter is still broken")
+    @Ignore("The mocking of the View is broken")
     @Test
-    public void addObserversTest() {
+    public void addObserversTestAndNotify() {
         ValueSelector valueSelector = new ValueSelector(mockView);
         valueSelector.addObserver(mockObserver);
         valueSelector.notifyObservers(mockedResistorInfo);
@@ -42,6 +59,16 @@ public class ValueSelectorTests {
             Assert.assertEquals(invocation.getArgument(0), mockedResistorInfo);
             return null;
         }).when(mockObserver).update(mockedResistorInfo);
+    }
+
+    @Ignore("The mocking of the View is broken")
+    @Test
+    public void setVisibleTest() {
+        ValueSelector valueSelector = new ValueSelector(mockView);
+        int expectedVisibility = View.VISIBLE;
+        valueSelector.setVisible(expectedVisibility);
+        LinearLayout layout = (LinearLayout) Whitebox.getInternalState(valueSelector, "valueLayout");
+        Assert.assertEquals(expectedVisibility, layout.getVisibility());
     }
 
 }
