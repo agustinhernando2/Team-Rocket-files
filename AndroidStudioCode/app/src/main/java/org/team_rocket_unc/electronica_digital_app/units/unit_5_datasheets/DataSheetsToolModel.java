@@ -8,7 +8,9 @@ public class DataSheetsToolModel {
     private static final List<String> PDF_LIST = Arrays.asList(
             "cd4011","cd4013","cd4025"
             ,"cd4071","cd4075","cd4081",
-            "cd4511","lm555","lm35");
+            "cd4511","lm555","lm35",
+            "adc0808","bc548","bs62lv256",
+            "hd1404","hm62256");
 
     private String name="cd4011";
 

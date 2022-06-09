@@ -5,6 +5,7 @@
         <item>Decimal</item>
         <item>Hexa</item>
     </string-array>
+
     <string-array name="pdfs_names">
         <item>cd4011</item>
         <item>cd4013</item>
@@ -15,5 +16,10 @@
         <item>cd4511</item>
         <item>lm555</item>
         <item>lm35</item>
+        <item>adc0808</item>
+        <item>bc548</item>
+        <item>bs62lv256</item>
+        <item>hd1404</item>
+        <item>hm62256</item>
     </string-array>
 </resources>
