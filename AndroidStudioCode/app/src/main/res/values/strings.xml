@@ -4,4 +4,6 @@
     <string name="navigation_drawer_close">Cerrar menu</string>
     <string name="u1_p2_conversor_title">Conversor de sistemas de unidades</string>
     <string name="u1_p2_conversor_instructions">En esta herramienta, usted podrá convertir un input a binario, decimal o hexa. Solo tendrá que seleccionar el sistema en el que se ingresa</string>
+    <string name="u3_p3_logic_gates_title">Tabla de verdad</string>
+    <string name="u3_p3_logic_gates_instructions">En esta herramienta podrá ver la tabla de verdad de las 5 compuertas más usadas</string>
 </resources>
