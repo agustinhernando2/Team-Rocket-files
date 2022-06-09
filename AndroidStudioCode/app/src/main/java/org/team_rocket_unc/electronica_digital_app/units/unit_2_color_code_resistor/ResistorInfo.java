@@ -7,6 +7,7 @@ import org.team_rocket_unc.electronica_digital_app.R;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class ResistorInfo {
@@ -62,7 +63,9 @@ public class ResistorInfo {
             multiplier++;
             resistance /= 1000;
         }
-        this.value = new DecimalFormat("0.#").format(resistance) + MULTIPLIER_MAP.get(multiplier) + '\u03A9'  + " \u00B1" + (band4 == R.color.GOLD ? 5 : 10) + "%";
+        DecimalFormat format = (DecimalFormat) DecimalFormat.getInstance(Locale.UK);
+        format.applyPattern("0.#");
+        this.value = format.format(resistance) + MULTIPLIER_MAP.get(multiplier) + '\u03A9'  + " \u00B1" + (band4 == R.color.GOLD ? 5 : 10) + "%";
         this.band1 = band1;
         this.band2 = band2;
         this.band3 = band3;
