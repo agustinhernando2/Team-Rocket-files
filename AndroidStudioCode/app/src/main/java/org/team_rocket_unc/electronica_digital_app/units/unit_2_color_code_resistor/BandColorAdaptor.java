@@ -60,7 +60,11 @@ public class BandColorAdaptor extends BaseAdapter {
         return rootView;
     }
 
-    public static List<Integer> getNormalBandColors() {
+    public static List<Integer> getFirstBandColors() {
+        return FULL_BAND_COLORS.subList(1,10);
+    }
+
+    public static List<Integer> getSecondBandColors() {
         return FULL_BAND_COLORS.subList(0,10);
     }
 

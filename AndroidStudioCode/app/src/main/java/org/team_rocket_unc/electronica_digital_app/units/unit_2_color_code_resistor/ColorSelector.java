@@ -19,8 +19,8 @@ public class ColorSelector implements Subject {
 
     public ColorSelector(View view) {
         colorInput = view.findViewById(R.id.resistorColorInput);
-        colorBand1 = getBand(view, R.id.inputColorBand1DDB, BandColorAdaptor.getNormalBandColors());
-        colorBand2 = getBand(view, R.id.inputColorBand2DDB, BandColorAdaptor.getNormalBandColors());
+        colorBand1 = getBand(view, R.id.inputColorBand1DDB, BandColorAdaptor.getFirstBandColors());
+        colorBand2 = getBand(view, R.id.inputColorBand2DDB, BandColorAdaptor.getSecondBandColors());
         colorBand3 = getBand(view, R.id.inputColorBand3DDB, BandColorAdaptor.getPartialBandColors());
         colorBand4 = getBand(view, R.id.inputColorBand4DDB, BandColorAdaptor.getSpecialBandColors());
         setListener(colorBand1);
@@ -73,7 +73,7 @@ public class ColorSelector implements Subject {
     }
 
     public void resetSelection() {
-        colorBand1.setSelection(1);
+        colorBand1.setSelection(0);
         colorBand2.setSelection(0);
         colorBand3.setSelection(3);
         colorBand4.setSelection(0);

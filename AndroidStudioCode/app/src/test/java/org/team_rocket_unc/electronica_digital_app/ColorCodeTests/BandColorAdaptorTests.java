@@ -10,8 +10,13 @@ public class BandColorAdaptorTests {
 
 
     @Test
-    public void getNormalBandColorsTest() {
-        Assert.assertEquals(10, BandColorAdaptor.getNormalBandColors().size());
+    public void getFirstBandColorsTest() {
+        Assert.assertEquals(9, BandColorAdaptor.getFirstBandColors().size());
+    }
+
+    @Test
+    public void getSecondBandColorsTest() {
+        Assert.assertEquals(10, BandColorAdaptor.getSecondBandColors().size());
     }
 
     @Test
