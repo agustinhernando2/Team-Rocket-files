@@ -66,24 +66,40 @@ public class OhmToolFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 selectedInputs.set(0, !selectedInputs.get(0));
+                if(Collections.frequency(selectedInputs,true)==3) {
+                    boxR.setChecked(false);
+                    selectedInputs.set(0, false);
+                }
             }
         });
         boxT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 selectedInputs.set(1, !selectedInputs.get(1));
+                if(Collections.frequency(selectedInputs,true)==3) {
+                    boxT.setChecked(false);
+                    selectedInputs.set(1, false);
+                }
             }
         });
         boxC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 selectedInputs.set(2, !selectedInputs.get(2));
+                if(Collections.frequency(selectedInputs,true)==3) {
+                    boxC.setChecked(false);
+                    selectedInputs.set(2, false);
+                }
             }
         });
         boxP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 selectedInputs.set(3, !selectedInputs.get(3));
+                if(Collections.frequency(selectedInputs,true)==3) {
+                    boxP.setChecked(false);
+                    selectedInputs.set(3, false);
+                }
             }
         });
 
@@ -91,11 +107,9 @@ public class OhmToolFragment extends Fragment {
             if(boxR.isChecked()){
                 String input = this.resistance.getText().toString();
                 model.setResistance(input.length() > 0 ? input : "0");
-                //selectedInputs.set(0,true);
                 updateOutputs();
             } else {
                 model.setResistance("0");
-                //selectedInputs.set(0,false);
             }
         });
 
@@ -103,11 +117,9 @@ public class OhmToolFragment extends Fragment {
             if(boxT.isChecked()){
                 String input = this.tension.getText().toString();
                 model.setTension(input.length() > 0 ? input : "0");
-                //selectedInputs.set(1,true);
                 updateOutputs();
             } else {
                 model.setTension("0");
-                //selectedInputs.set(1,false);
             }
             System.out.print(selectedInputs);
         });
@@ -116,11 +128,9 @@ public class OhmToolFragment extends Fragment {
             if(boxC.isChecked()){
                 String input = this.current.getText().toString();
                 model.setCurrent(input.length() > 0 ? input : "0");
-                //selectedInputs.set(2,true);
                 updateOutputs();
             } else {
                 model.setCurrent("0");
-                //selectedInputs.set(2,false);
             }
 
         });
@@ -128,10 +138,8 @@ public class OhmToolFragment extends Fragment {
             if(boxP.isChecked()){
                 String input = this.power.getText().toString();
                 model.setPower(input.length() > 0 ? input : "0");
-                //selectedInputs.set(3,true);
                 updateOutputs();
             } else {model.setPower("0");
-                //selectedInputs.set(3,false);
                 }
         });
     }
