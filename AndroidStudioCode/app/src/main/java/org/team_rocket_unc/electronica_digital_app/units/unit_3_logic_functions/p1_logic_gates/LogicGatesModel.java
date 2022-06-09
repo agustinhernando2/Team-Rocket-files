@@ -102,22 +102,22 @@ public class LogicGatesModel {
         System.out.println(i);
         switch (i) {
             case 0:
-                view.setImageResource(R.drawable.and);
+                view.setImageResource(R.drawable.and_);
                 break;
             case 1:
-                view.setImageResource(R.drawable.nand);
+                view.setImageResource(R.drawable.nand_);
                 break;
             case 2:
-                view.setImageResource(R.drawable.or);
+                view.setImageResource(R.drawable.or_);
                 break;
             case 3:
-                view.setImageResource(R.drawable.nor);
+                view.setImageResource(R.drawable.nor_);
                 break;
             case 4:
-                view.setImageResource(R.drawable.xor);
+                view.setImageResource(R.drawable.xor_);
                 break;
             case 5:
-                view.setImageResource(R.drawable.xnor);
+                view.setImageResource(R.drawable.xnor_);
                 break;
         }
     }
