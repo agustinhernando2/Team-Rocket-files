@@ -1,8 +1,10 @@
 package org.team_rocket_unc.electronica_digital_app.units.unit_1_calculators.p2_ohm;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import org.team_rocket_unc.electronica_digital_app.utils.KeyboardUtils;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class OhmToolModel {
 
@@ -20,32 +22,38 @@ public class OhmToolModel {
         power=Double.parseDouble(pow);
     }
 
-    public String getTension(){
-        return String.format("%.2f", tension);
-    }
     public String getCurrent(){
-        return String.format("%.3f", current);
+        return KeyboardUtils.DECIMAL_FORMAT.format(current);
+    }
+    public String getTension(){
+        return KeyboardUtils.DECIMAL_FORMAT.format(tension);
     }
     public String getResistance(){
-        return String.format("%.0f", resistance);
+        return KeyboardUtils.DECIMAL_FORMAT.format(resistance);
     }
-    public String getPower(){return String.format("%.2f", power);}
+    public String getPower(){
+        return KeyboardUtils.DECIMAL_FORMAT.format(power);
+    }
 
-    public void calculateAll(List<Boolean> selected){
-        if(Collections.frequency(selected, true)==2){
-            if(selected.get(0)){ // resistencia seleccionada
-                if(selected.get(1)){current=tension/resistance; power=Math.pow(tension,2)/resistance;} //tension seleccionada
-                else if(selected.get(2)){tension=current*resistance; power=Math.pow(current,2)*resistance;} // corriente seleccionada
-                else if(selected.get(3)){tension=Math.sqrt(power*resistance); current=Math.sqrt(power/resistance);} // power seleccionada
+    public void calculateAll(boolean[] inputSelected){
+            if(inputSelected[0]){ // Current seleccionada
+                //tension seleccionada
+                if(inputSelected[1]){resistance=tension/current; power=tension*current;}
+                // resistencia seleccionada
+                else if(inputSelected[2]){tension=current*resistance; power=Math.pow(current,2)*resistance;}
+                // power seleccionada
+                else if(inputSelected[3]){resistance=power/Math.pow(current,2);  tension=power/current;}
             }
-            else if(selected.get(1)){ // tension seleccionada
-                if(selected.get(2)){resistance=tension/current; power=tension*current;} // corriente seleccionada
-                else if(selected.get(3)){resistance=Math.pow(tension,2)/power; current=power/tension;} // power seleccionda
+            else if(inputSelected[1]){ // tension seleccionada
+                // resistance seleccionada
+                if(inputSelected[2]){current=tension/resistance; power=Math.pow(tension,2)/resistance;}
+                // power seleccionda
+                else if(inputSelected[3]){resistance=Math.pow(tension,2)/power; current=power/tension;}
             }
-            else if(selected.get(2) && selected.get(3)){ // corriente y power
-                resistance=power/Math.pow(current,2);
-                tension=power/current;
+            else if(inputSelected[2] && inputSelected[3]){
+                // resistance y power
+                tension=Math.sqrt(power*resistance); current=Math.sqrt(power/resistance);
             }
-        }
+
     }
 }

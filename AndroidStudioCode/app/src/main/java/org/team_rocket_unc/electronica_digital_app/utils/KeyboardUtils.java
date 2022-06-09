@@ -8,9 +8,20 @@ import android.view.KeyEvent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public final class KeyboardUtils {
 
     private KeyboardUtils() {
+    }
+
+    public static DecimalFormat DECIMAL_FORMAT = (DecimalFormat) NumberFormat.getNumberInstance(Locale.UK);
+
+    static {
+        DECIMAL_FORMAT.applyPattern("0.#");
+        DECIMAL_FORMAT.setMaximumFractionDigits(3);
     }
 
     public static void functionAfterChange(EditText targetText, Runnable function) {
