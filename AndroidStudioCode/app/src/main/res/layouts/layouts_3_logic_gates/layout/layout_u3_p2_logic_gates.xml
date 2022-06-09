@@ -20,6 +20,7 @@
         android:gravity="center"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp">
+
         <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +34,8 @@
                 android:layout_height="25dp"
                 android:layout_row="0"
                 android:layout_column="0"
-                android:checked="false" />
+                android:checked="false"
+                android:theme="@style/colored_checkBox"/>
             <CheckBox
                 android:id="@+id/cBoxGateA_in2"
                 android:layout_width="25dp"
@@ -41,21 +43,24 @@
                 android:layout_row="1"
                 android:layout_column="0"
                 android:layout_marginBottom="50dp"
-                android:checked="false" />
+                android:checked="false"
+                android:theme="@style/colored_checkBox"/>
             <CheckBox
                 android:id="@+id/cBoxGateB_in1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_row="4"
                 android:layout_column="0"
-                android:checked="false"/>
+                android:checked="false"
+                android:theme="@style/colored_checkBox"/>
             <CheckBox
                 android:id="@+id/cBoxGateB_in2"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_row="5"
                 android:layout_column="0"
-                android:checked="false"/>
+                android:checked="false"
+                android:theme="@style/colored_checkBox"/>
         </GridLayout>
     <GridLayout
         android:layout_width="wrap_content"
@@ -124,8 +129,8 @@
                 android:layout_row="1"
                 android:layout_column="0"
                 android:enabled="false"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:checked="false" />
+                android:checked="false"
+                android:theme="@style/colored_checkBox"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -178,5 +183,4 @@
                 android:spinnerMode="dropdown" />
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

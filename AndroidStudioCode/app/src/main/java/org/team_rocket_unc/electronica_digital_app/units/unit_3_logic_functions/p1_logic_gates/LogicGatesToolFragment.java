@@ -137,11 +137,11 @@ public class LogicGatesToolFragment extends Fragment {
 
     private void onChangeSpinner() {
         logicGatesModel.setTypes(
-                gateTypeA.getSelectedItem().toString()
-                , gateTypeB.getSelectedItem().toString()
-                , gateTypeC.getSelectedItem().toString());
+                gateTypeA.getSelectedItem().toString(),
+                gateTypeB.getSelectedItem().toString(),
+                gateTypeC.getSelectedItem().toString());
 
-        output.setChecked(logicGatesModel.getOutput());
+        output.setChecked(logicGatesModel.getOutputOfCircuit());
     }
 
     private void onChangeBox() {
@@ -151,7 +151,7 @@ public class LogicGatesToolFragment extends Fragment {
                 gateB_in1.isChecked(),
                 gateB_in2.isChecked());
 
-        output.setChecked(logicGatesModel.getOutput());
+        output.setChecked(logicGatesModel.getOutputOfCircuit());
     }
 }
 

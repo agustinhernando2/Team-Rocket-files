@@ -3,13 +3,49 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../../../../../../../home/agusher/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.3390625" />
-        <entry key="../../../../../../../../../../layout/custom_preview.xml" value="0.19427083333333334" />
-        <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p2_conversor.xml" value="0.3390625" />
-        <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p2_logic_gates.xml" value="0.3390625" />
+        <entry key="../../../../../../../../../../layout/custom_preview.xml" value="0.3453125" />
+        <entry key="..\:/Users/Usuario/Desktop/Code/Java/IngSoftware/Team-Rocket-files/AndroidStudioCode/app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p2_conversor.xml" value="0.31068840579710144" />
+        <entry key="..\:/Users/Usuario/Desktop/Code/Java/IngSoftware/Team-Rocket-files/AndroidStudioCode/app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p3_led.xml" value="0.31068840579710144" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3359375" />
+        <entry key="app/src/main/res/layout/layout_h1_calculators.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout/layout_h1_calculators_menu.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_h1_conversor.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_h1_led.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_h1_ohm.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_h2_color.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/layout_h3_logic_functions.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout/layout_h3_logic_functions_menu.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_h3_logic_gates.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_h3_truth_table.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_h4_karnaugh.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout/layout_h5_datasheets.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout/layout_inicio.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout/layout_instructions.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_main.xml" value="0.1466438648995297" />
+        <entry key="app/src/main/res/layout/layout_navegador.xml" value="0.3515625" />
+        <entry key="app/src/main/res/layouts/layout/layout_instructions.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_1_calculators/drawable/image_checkbox.xml" value="0.256" />
+        <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p1_menu.xml" value="0.115861479264643" />
+        <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p2_conversor.xml" value="0.264" />
+        <entry key="app/src/main/res/layouts/layouts_1_calculators/layout/layout_u1_p4_ohm.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_2_color_code_resistor/layout/layout_u2_p1_color.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p1_menu.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p2_logic_gates.xml" value="0.5" />
+        <entry key="app/src/main/res/layouts/layouts_3_logic_gates/layout/layout_u3_p3_truth_table.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_4_karnaugh/layout/layout_u4_p1_karnaugh.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_5_datasheets/layout/layout_u5_p1_datasheets.xml" value="0.3104166666666667" />
+        <entry key="app/src/main/res/layouts/layouts_main/layout/layout_main.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_main/layout/layout_navigation_drawer.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_main/layout/layout_navigation_drawer_menu.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/layouts/layouts_main/layout/layout_start.xml" value="0.12141941000427534" />
+        <entry key="app/src/main/res/menu/draw_menu.xml" value="0.22" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
 </project>
