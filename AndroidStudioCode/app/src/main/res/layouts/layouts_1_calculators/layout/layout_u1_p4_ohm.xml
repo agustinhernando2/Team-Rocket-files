@@ -10,8 +10,150 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OHM"
-        android:textSize="30sp"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:text="Ley de Ohm y Potencia"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ley_ohm_img" />
+
+    <LinearLayout
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxI"
+            android:layout_width="36dp"
+            android:layout_height="29dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="I="
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/intensityInput"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[A]"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="V="
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tensionInput"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[V]"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="228dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="R="
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/resistanceInput"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[Ω]"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="P="
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/powerInput"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="[W]"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
 </LinearLayout>
