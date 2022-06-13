@@ -35,7 +35,7 @@
         android:id="@+id/buttonColorCodeResistors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Código de colores de resistencias"
+        android:text="@string/u2_p1_color_title"
         />
     <Button
         android:id="@+id/buttonLogicFunctions"

@@ -1,7 +1,6 @@
 package org.team_rocket_unc.electronica_digital_app.CalculatorTests;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 import org.team_rocket_unc.electronica_digital_app.units.unit_1_calculators.p1_conversion.ConversionToolModel;

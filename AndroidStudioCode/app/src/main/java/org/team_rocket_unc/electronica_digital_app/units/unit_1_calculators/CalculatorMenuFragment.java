@@ -30,11 +30,11 @@ public class CalculatorMenuFragment extends Fragment {
 
         setTool(conversorButton, R.id.buttonConversion, new InstructionsFragment(getString(R.string.u1_p2_conversor_title),
                 getString(R.string.u1_p2_conversor_instructions), new ConversionToolFragment()));
-        setTool(conversorButton, R.id.buttonOhm, new InstructionsFragment(getString(R.string.u1_p_ohm_title),
-                getString(R.string.u1_p_ohm_instructions),
+        setTool(conversorButton, R.id.buttonOhm, new InstructionsFragment(getString(R.string.u1_p4_ohm_title),
+                getString(R.string.u1_p4_ohm_instructions),
                 new OhmToolFragment()));
-        setTool(conversorButton, R.id.buttonLed, new InstructionsFragment("Circuito con LED",
-                "Instrucciones del circuito con LED",
+        setTool(conversorButton, R.id.buttonLed, new InstructionsFragment(getString(R.string.u1_p3_led_title),
+                getString(R.string.u1_p3_led_instructions),
                 new LedCircuitToolFragment()));
         return view;
     }

@@ -35,8 +35,8 @@ public class MainFragment extends Fragment {
         view = inflater.inflate(R.layout.layout_start,container,false);
 
         setTool(calculators, R.id.buttonCalculators, new CalculatorMenuFragment());
-        setTool(colorCodeResistors, R.id.buttonColorCodeResistors, new InstructionsFragment("Código de colores de resistencias",
-                "En esta herramienta usted podrá ingresar las bandas de colores de una resistencia para conocer su valoro bien ingresar un valor para conocer las bandas correctas",
+        setTool(colorCodeResistors, R.id.buttonColorCodeResistors, new InstructionsFragment(getString(R.string.u2_p1_color_title),
+                getString(R.string.u2_p1_color_instructions),
                 new ColorCodeResistorsToolFragment()));
         setTool(logicFunctions, R.id.buttonLogicFunctions, new LogicFunctionsMenuFragment());
         setTool(karnaugh, R.id.buttonKarnaugh, new InstructionsFragment("Mapas de Karnaugh",
@@ -44,8 +44,8 @@ public class MainFragment extends Fragment {
                         "con un mapa de Karnaugh. Para poder implementarlo computacionalmente se emplearán los algorítmos de Quine-McCliskey y Petrick.\n" +
                         "El usuario podrá optar por resolver su simplificación por cualquiera de estos algorítmos",
                 new KarnaughToolFragment()));
-        setTool(datasheets, R.id.buttonDatasheets, new InstructionsFragment("Datasheets",
-                "En esta sección usted encontrará acceso a las DataSheet de los chips más utilizados en la materia Electrónica digital 1",
+        setTool(datasheets, R.id.buttonDatasheets, new InstructionsFragment(getString(R.string.u5_p1_datasheets_title),
+                getString(R.string.u5_p1_datasheets_instructions),
                 new DatasheetsToolFragment()));
 
         return view;
