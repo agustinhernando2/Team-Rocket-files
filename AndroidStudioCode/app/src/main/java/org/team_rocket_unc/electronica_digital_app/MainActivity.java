@@ -40,13 +40,11 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                     getString(R.string.u2_p1_color_instructions),
                     new ColorCodeResistorsToolFragment()));
             put(R.id.logicFunctions, new LogicFunctionsMenuFragment());
-            put(R.id.karnaugh, new InstructionsFragment("Mapas de Karnaugh",
-                    "Esta herramienta le permitirá reducir funciones lógicas al igual que lo haría\n" +
-                            "con un mapa de Karnaugh. Para poder implementarlo computacionalmente se emplearán los algorítmos de Quine-McCliskey y Petrick.\n" +
-                            "El usuario podrá optar por resolver su simplificación por cualquiera de estos algorítmos",
+            put(R.id.karnaugh, new InstructionsFragment(getString(R.string.u4_p1_karnaugh_title),
+                    getString(R.string.u4_p1_karnaugh_instructions),
                     new KarnaughToolFragment()));
-            put(R.id.datasheets, new InstructionsFragment("Datasheets",
-                    "En esta sección usted encontrará acceso a las DataSheet de los chips más utilizados en la materia Electrónica digital 1",
+            put(R.id.datasheets, new InstructionsFragment(getString(R.string.u5_p1_datasheets_title),
+                    getString(R.string.u5_p1_datasheets_instructions),
                     new DatasheetsToolFragment()));
         }};
 

@@ -39,10 +39,8 @@ public class MainFragment extends Fragment {
                 getString(R.string.u2_p1_color_instructions),
                 new ColorCodeResistorsToolFragment()));
         setTool(logicFunctions, R.id.buttonLogicFunctions, new LogicFunctionsMenuFragment());
-        setTool(karnaugh, R.id.buttonKarnaugh, new InstructionsFragment("Mapas de Karnaugh",
-                "Esta herramienta le permitirá reducir funciones lógicas al igual que lo haría\n" +
-                        "con un mapa de Karnaugh. Para poder implementarlo computacionalmente se emplearán los algorítmos de Quine-McCliskey y Petrick.\n" +
-                        "El usuario podrá optar por resolver su simplificación por cualquiera de estos algorítmos",
+        setTool(karnaugh, R.id.buttonKarnaugh, new InstructionsFragment(getString(R.string.u4_p1_karnaugh_title),
+                getString(R.string.u4_p1_karnaugh_instructions),
                 new KarnaughToolFragment()));
         setTool(datasheets, R.id.buttonDatasheets, new InstructionsFragment(getString(R.string.u5_p1_datasheets_title),
                 getString(R.string.u5_p1_datasheets_instructions),
