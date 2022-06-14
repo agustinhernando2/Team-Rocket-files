@@ -18,36 +18,34 @@ public class QuineMcCluskeyStrategy implements SolverStrategy {
         mintermsIn.addAll(dontCareConditionsIn);
         Collections.sort(mintermsIn);
 
+        Set<String> primes = new HashSet<>();
+
         Map<Integer,Set<String>> nextTable = createGroup(mintermsIn);
         Map<Integer, Set<String>> table = new HashMap<>();
         while(!isEmpty(nextTable)) {
             table = new HashMap<>(nextTable);
             printGroups(table);
-            nextTable = merge(table);
+            MergeResponse mergeResponse = merge(table);
+            nextTable = mergeResponse.getMerged();
+            primes.addAll(mergeResponse.getPrimes());
         }
         Map<Integer, Set<String>> finalTable = new HashMap<>(table);
 
         System.out.println(finalTable);
 
-        Set<String> finalGroups = new HashSet<>();
         for(Set<String> value : finalTable.values()) {
-            for(String string : value) {
-                finalGroups.add(string);
-            }
+            primes.addAll(value);
         }
-        System.out.println(finalGroups);
+        System.out.println(primes);
 
         HashMap<List<Integer>,String> relations= new HashMap<>();
         HashMap<List<Integer>,Boolean> essentials = new HashMap<>();
 
-        for(String f:finalGroups){
+        for(String f:primes){
             List<Integer> str2dec = stringToDec(f);
             relations.put(str2dec,f);
             essentials.put(str2dec,false);
         }
-
-        System.out.println(relations);
-        System.out.println(essentials);
 
         int control =0;
         for(int j=0; j< mintermsIn.size();j++) {
@@ -70,6 +68,9 @@ public class QuineMcCluskeyStrategy implements SolverStrategy {
             else
                 control++;
         }
+
+        System.out.println("Minterms: " + mintermsIn);
+        System.out.println("Essentials: " + essentials);
 
         while(!mintermsIn.isEmpty()){
             Integer mint = mintermsIn.get(0);
@@ -156,8 +157,12 @@ public class QuineMcCluskeyStrategy implements SolverStrategy {
         return groups;
     }
 
-    private Map<Integer, Set<String>> merge(Map<Integer, Set<String>> groups) {
+    private MergeResponse merge(Map<Integer, Set<String>> groups) {
         Map<Integer, Set<String>> implications = new HashMap<>();
+        Set<String> primes = new HashSet<>();
+        for(Set<String> value : groups.values()) {
+            primes.addAll(value);
+        }
         for(int i = 0; i < groups.size() - 1; i++) {
             Set<String> currentSet = groups.get(i);
             Set<String> nextSet = groups.get(i + 1);
@@ -167,12 +172,14 @@ public class QuineMcCluskeyStrategy implements SolverStrategy {
                     String changesOneBit = changesOneBit(currentBinary, comparedBinary);
                     if(changesOneBit != null) {
                         newBinariesSet.add(changesOneBit);
+                        primes.remove(comparedBinary);
+                        primes.remove(currentBinary);
                     }
                 }
             }
             implications.put(i, newBinariesSet);
         }
-        return implications;
+        return new MergeResponse(primes, implications);
     }
 
     private void printAlgorithmData(List<Integer> mintermsIn, List<Integer> dontCareConditionsIn) {
