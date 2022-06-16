@@ -5,16 +5,16 @@ import java.util.Set;
 
 public class MergeResponse {
 
-    private final Set<String> primes;
+    private final Set<String> essentials;
     private final Map<Integer, Set<String>> merged;
 
-    public MergeResponse(Set<String> primes, Map<Integer, Set<String>> merged) {
-        this.primes = primes;
+    public MergeResponse(Set<String> essentials, Map<Integer, Set<String>> merged) {
+        this.essentials = essentials;
         this.merged = merged;
     }
 
-    public Set<String> getPrimes() {
-        return primes;
+    public Set<String> getEssentials() {
+        return essentials;
     }
 
     public Map<Integer, Set<String>> getMerged() {
