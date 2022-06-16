@@ -344,4 +344,8 @@
         <item>hd1404</item>
         <item>hm62256</item>
     </string-array>
+    <string-array name="algorithms">
+        <item>Quine-McCluskey</item>
+        <item>Petrick</item>
+    </string-array>
 </resources>
