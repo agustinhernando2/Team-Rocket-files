@@ -82,4 +82,14 @@ public class PetrickTests {
                 "BC'", "ABD'", "AC'D'", "A'D");
     }
 
+    @Test(expected = KarnaughMap.InvalidKarnaughInputException.class)
+    public void testInputForbidden1() throws KarnaughMap.InvalidKarnaughInputException {
+        KarnaughMap karnaughMap = new KarnaughMap("1,2,3,5,16","",new PetrickStrategy());
+    }
+
+    @Test(expected = KarnaughMap.InvalidKarnaughInputException.class)
+    public void testInputForbidden2() throws KarnaughMap.InvalidKarnaughInputException {
+        KarnaughMap karnaughMap = new KarnaughMap("1,2,3,5","-1",new PetrickStrategy());
+    }
+
 }
