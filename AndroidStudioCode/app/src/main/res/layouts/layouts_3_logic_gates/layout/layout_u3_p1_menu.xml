@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funciones lógicas"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En esta sección usted encontrará herramientas para comprender y analizar compuertas lógicas"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20sp"/>
+    <Button
+        android:id="@+id/buttonTruthTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tablas de verdad"
+        />
+
+    <Button
+        android:id="@+id/buttonGateConection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conexión de compuertas"
+        />
+
+</LinearLayout>

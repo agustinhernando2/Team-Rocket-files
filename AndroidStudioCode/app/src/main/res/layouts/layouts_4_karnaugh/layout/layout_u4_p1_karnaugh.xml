@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAPAS DE KARNAUGH"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Algorítmo:"/>
+    <Spinner
+        android:id="@+id/algorithmDDB"
+        android:layout_width="200dp"
+        android:layout_height="30sp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F(A,B,C,D) = Sum m("/>
+        <EditText
+            android:id="@+id/karnaughConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="1,2,3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin cuidado"/>
+    <EditText
+        android:id="@+id/karnaughNoCareConditions"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/karnaughCalculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Calcular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Función lógica simplificada"/>
+    <TextView
+        android:id="@+id/karnaughOutput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+</LinearLayout>
