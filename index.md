@@ -16,4 +16,4 @@ La aplicacion educativa se hizo con el fin de ser una herramienta para la materi
 
 ### Enlaces Utiles
 [Documentación](https://drive.google.com/file/d/1_4DAiDB4U8Dvr5yJXoF7v7f-BI7L2rLV/view?usp=sharing).
-[Pagina Web](https://agustinhernando2.github.io/).
+[Pagina Web](https://sites.google.com/mi.unc.edu.ar/team-rocket/manejo-de-las-configuraciones).
